@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Jura:wght@300;400;500;600;700&family=Mukta:wght@800&family=Poppins:wght@400;500;600&family=Teko:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2>To-Do List App<img src="/img/notebook.png" alt="" /></h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your Task" />
+          <button onclick="addTask()" onkeypress="Enter" id="myInput">
+            Add
+          </button>
+        </div>
+        <ul id="list-container"></ul>
+      </div>
+      <div class="clear-button">
+        <button onclick="clearButton()">Clear</button>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

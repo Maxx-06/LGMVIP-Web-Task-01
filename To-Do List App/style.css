@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #3f2b96 0%, #a8c0ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-app {
+  width: 540px;
+  max-height: 400px;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 50px;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.todo-app::-webkit-scrollbar {
+  width: 4px;
+}
+
+.todo-app::-webkit-scrollbar-track {
+  -webkit-box-shadow:inset 0 0 0 rgba(0,0,0,0.3); 
+}
+
+.todo-app::-webkit-scrollbar-thumb {
+  border-radius: 100px; 
+  background-color: #3f2b96;
+
+}
+
+.todo-app h2 {
+  display: flex;
+  height: 40px;
+  color: #3f2b96;
+  align-items: center;
+  margin: 20px 0px;
+  user-select: none;
+}
+
+.todo-app h2 img {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  border-radius: 30px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: rgba(63, 43, 150, 1);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  user-select: none;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 20px;
+  user-select: none;
+  position: relative;
+  border-bottom: 1px solid rgb(169, 168, 168);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  height: 40px;
+  width: 40px;
+  font-size: 22px;
+  color: #555;
+  text-align: center;
+  line-height: 40px;
+}
+ul li span:hover {
+  background-color: #edeef0;
+  border-radius: 50%;
+}
+
+.clear-button{
+  position: absolute;
+  bottom: 2%;  
+  transition: transform .1s ease-in-out;
+}
+
+.clear-button:active{
+  transform: translateY(5px);
+}
